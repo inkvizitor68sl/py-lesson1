@@ -1,0 +1,42 @@
+xrange (py2) => range (py3)
+range(2,10+1): = {2,10}
+range(2,10): = {2,9}
+
+
+str()
+int()
+bool()
+type()
+
+https://learn.python.ru/lessons/05_listsanddicts.html?full#3
+
+=============== LIST
+len(mylist)
+mylist.append
+mylist.count("asf")
+mylist[2:4]
+mylist[:-2]
+mylist.sort - inplace
+if 'asf' in mylist
+индекс непрерывен, сдвигается при удалении середины влево
+mylist.remove("asdf") удаляет только первое вхождение
+
+myli = []
+
+for i in range(2,8):
+    myli.append(i)
+
+=========== DICT
+dict - key-value (json-like)
+
+dict.get("key")
+dict.get("key", "default_value_to_print")
+del dict["key"]
+
+list can be added as dict element
+or dict can be added as list element (список словарей, в него удобно представлять бд)
+
+=========== VARS
+blah_blah
+=========== functions
+
