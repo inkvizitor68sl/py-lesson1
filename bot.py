@@ -11,8 +11,9 @@ logging.basicConfig(format='%(name)s - %(levelname)s - %(message)s',
 
 def greet_user(bot, update):
     print("Вызван /start")
+    greet_username = update.message.chat.username
     print(update)
-    update.message.reply_text("I am dummy")
+    update.message.reply_text("I am dummy, you are " + greet_username)
 
 def talk_to_me(bot, update):
     user_text = update.message.text 
